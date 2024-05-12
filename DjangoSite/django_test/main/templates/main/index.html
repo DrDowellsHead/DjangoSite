@@ -2,6 +2,9 @@
 
 {% block title %}Главная страница{% endblock %}
 
+{% load static %}
+
+
 {% block content %}
 <div class="features">
     <style>
@@ -19,6 +22,7 @@
             word-wrap: break-word;
             margin: 0 auto;
         }
+
     </style>
     <div class="parent">
         <h1 class="parent">Космическое агентство</h1>
@@ -28,10 +32,13 @@
     </div>
 </div>
 
-<img src="main/img/Cosmos.png" alt='Cosmos'>
-<img src="main/img/Rocket.png" alt='Rocket'>
-<img src="main/img/Telescope.png" alt='Telescope'>
-<img src="main/img/Moon.png" alt='Moon'>
-<img src="main/img/Medal.png" alt='Medal'>
+<div class="images-container">
+    <img src="{% static 'main/img/Cosmos.png' %}" alt='Cosmos' align="right">
+    <img src="{% static 'main/img/Rocket.png' %}" alt='Rocket' id="First_Img" align="left">
+    <img src="{% static 'main/img/Telescope.png' %}" alt='Telescope' id="Second_Img">
+    <img src="{% static 'main/img/Moon.png' %}" alt='Moon' id="Third_Img" align="left">
+    <img src="{% static 'main/img/Medal.png' %}" alt='Medal' id="Fourth_Img">
+</div>
+
 
 {% endblock %}
