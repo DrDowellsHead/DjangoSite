@@ -1,0 +1,39 @@
+header {
+    justify-content: space-between;
+    height: 100px;
+    background-color: black !important;
+    text-align: center; /* Выравнивание содержимого по центру */
+}
+
+header > img:nth-child(1) {
+    float: left;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+header > img:nth-child(2) {
+    float: right;
+    margin-right: 150px;
+    margin-top: 30px;
+}
+
+.header-link {
+    box-align: center;
+    margin-top: 35px;
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+    color: red;
+    transform: scale(1.10);
+    transition: all .6s ease;
+}
+
+body {
+    background: white;
+}
