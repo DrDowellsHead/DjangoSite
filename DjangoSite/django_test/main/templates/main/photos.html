@@ -1,10 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'main/layout.html' %}
 
-</body>
-</html>
+{% block title %}Фотографии{% endblock %}
+
+{% load static %}
+
+
+{% block content %}
+<div class="images-photos" style="position: relative;">
+    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
+        <img src="{% static 'main/img/photos/arrow.png' %}" alt='arrow' align="left">
+    </div>
+    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
+        <img src="{% static 'main/img/photos/arrow (1).png' %}" alt='arrow(1)' align="left">
+    </div>
+    <div style="position: absolute; top: 10px; left: 1060px; margin-top: 30px;">
+        <img src="{% static 'main/img/photos/Mask group.png' %}" alt='Mask group'>
+    </div>
+    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
+        <img src="{% static 'main/img/photos/Picture.png' %}" alt='Picture'align="left">
+    </div>
+    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
+        <img src="{% static 'main/img/photos/Picture (1).png' %}" alt='Picture(1)'align="left">
+    </div>
+    <div style="position: absolute; top: 10px; left: 650px; margin-top: 60px;">
+        <img src="{% static 'main/img/photos/Picture (2).png' %}" alt='Picture(2)'>
+    </div>
+    <div style="position: absolute; top: 200px; left: 300px; margin-top: 80px;">
+        <img src="{% static 'main/img/photos/Picture (3).png' %}" alt='Picture(3)'align="left">
+    </div>
+    <div style="position: absolute; top: 200px; left: 650px; margin-top: 80px;">
+        <img src="{% static 'main/img/photos/Picture Selected.png' %}" alt='Picture Selected'>
+    </div>
+</div>
+
+{% endblock %}
