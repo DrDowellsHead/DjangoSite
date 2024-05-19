@@ -6,30 +6,40 @@
 
 
 {% block content %}
-<div class="images-photos" style="position: relative;">
-    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
-        <img src="{% static 'main/img/photos/arrow.png' %}" alt='arrow' align="left">
-    </div>
-    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
-        <img src="{% static 'main/img/photos/arrow (1).png' %}" alt='arrow(1)' align="left">
-    </div>
-    <div style="position: absolute; top: 10px; left: 1060px; margin-top: 30px;">
+<style>
+    body {
+        background: rgb(59, 57, 57);
+    }
+</style>
+
+<h2 style="text-align: center; color: white; margin-top: 50px; font: 30pt 'Verdana'; font-weight: 550;">Фотографии</h2>
+
+<div class="images-photos">
+    <div class="center-image">
         <img src="{% static 'main/img/photos/Mask group.png' %}" alt='Mask group'>
     </div>
-    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
-        <img src="{% static 'main/img/photos/Picture.png' %}" alt='Picture'align="left">
-    </div>
-    <div style="position: absolute; top: 10px; left: 300px; margin-top: 60px;">
-        <img src="{% static 'main/img/photos/Picture (1).png' %}" alt='Picture(1)'align="left">
-    </div>
-    <div style="position: absolute; top: 10px; left: 650px; margin-top: 60px;">
-        <img src="{% static 'main/img/photos/Picture (2).png' %}" alt='Picture(2)'>
-    </div>
-    <div style="position: absolute; top: 200px; left: 300px; margin-top: 80px;">
-        <img src="{% static 'main/img/photos/Picture (3).png' %}" alt='Picture(3)'align="left">
-    </div>
-    <div style="position: absolute; top: 200px; left: 650px; margin-top: 80px;">
-        <img src="{% static 'main/img/photos/Picture Selected.png' %}" alt='Picture Selected'>
+    <div class="image-row">
+        <div>
+            <img src="{% static 'main/img/photos/arrow.png' %}" alt='arrow' style="margin-top: 50px;">
+        </div>
+        <div>
+            <img src="{% static 'main/img/photos/Picture (3).png' %}" alt='Picture(3)'>
+        </div>
+        <div>
+            <img src="{% static 'main/img/photos/Picture (2).png' %}" alt='Picture(2)'>
+        </div>
+        <div>
+            <img src="{% static 'main/img/photos/Picture Selected.png' %}" alt='Picture Selected'>
+        </div>
+        <div>
+            <img src="{% static 'main/img/photos/Picture.png' %}" alt='Picture'>
+        </div>
+        <div>
+            <img src="{% static 'main/img/photos/Picture (1).png' %}" alt='Picture(1)'>
+        </div>
+        <div>
+            <img src="{% static 'main/img/photos/arrow (1).png' %}" alt='arrow(1)' style="margin-top: 50px;">
+        </div>
     </div>
 </div>
 
