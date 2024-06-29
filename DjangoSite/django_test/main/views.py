@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import SliderPhoto
 
 
 # Create your views here.
@@ -12,7 +13,8 @@ def advantages(request):
 
 
 def photos(request):
-    return render(request, 'main/photos.html')
+    photos = SliderPhoto.objects.all()
+    return render(request, 'main/photos.html', {'photos': photos})
 
 
 def authorization(request):
